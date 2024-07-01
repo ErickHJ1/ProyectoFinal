@@ -1,24 +1,23 @@
-import Login from './components/Login'
+import Login from './pages/Login'
 import './App.css'
-import AboutPage from './components/AboutPage';
-import HomePage from './components/HomePage';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import ContactPage from './components/ContactPage';
-import Register from './components/Register';
+import AboutPage from './pages/AboutPage';
+import HomePage from './pages/HomePage';
+import {  Route, Routes } from 'react-router-dom';
+import ContactPage from './pages/ContactPage';
+import Register from './pages/Register';
 
 
 function App() {
   return (
-    <Router>
       <Routes>
-        <Route path="/" element={<HomePage/>}></Route>
+        <Route path="/home" element={<HomePage/>}></Route>
         <Route path="/about" element={<AboutPage/>}></Route>
         <Route path="/contact" element={<ContactPage/>}></Route>
         <Route path='/login' element={<Login/>} ></Route>
         <Route path='/register' element={<Register/>}></Route>
-        </Routes>
-    </Router>
+      </Routes>
   ); 
 }
 
 export default App
+
