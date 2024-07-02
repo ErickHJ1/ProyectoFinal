@@ -6,7 +6,7 @@ import { useEffect, useState } from "react"
 const Login = () => {
 const [usuarioInput, setUsuarioInput] = useState("")
 const [passInput, setPassInput] = useState("")
-const [data, setData] = useState("")
+const [data, setData] = useState()
 const navegacion=useNavigate("")
 
 
@@ -25,15 +25,15 @@ useEffect(() => {
 async function loginUser() {
     console.log("datos obtenidos con boton", data)
     if (data) {
-        const user = data.find((user) => user.correo === usuarioInput)
+        const user = data.find((user) => user.usuario === usuarioInput)
         console.log("datos filtrados pass", user.pass)
         console.log("datos users pass", passInput)
         if (user.pass === passInput) {
-            console.log("usuario y contrasean correcto", user.pass)
+            console.log("usuario y contraseña correcto", user.pass)
             alert("Inicio de sesion correcto");
             localStorage.setItem("id", user.id)
             
-                navegacion("/home")
+                navegacion("/")
             
         }else alert('usuario y contraseña no coinciden')
       }}
