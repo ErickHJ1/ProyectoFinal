@@ -5,6 +5,24 @@
       "armadura": "Leon joven",
       "tipo": "Pesada",
       "precio": "150000 runas"
+    },
+    {
+      "id": "c304",
+      "armadura": "12",
+      "tipo": "12",
+      "precio": "21"
+    },
+    {
+      "id": "6350",
+      "armadura": "11",
+      "tipo": "1",
+      "precio": "1"
+    },
+    {
+      "id": "670a",
+      "armadura": "11",
+      "tipo": "1",
+      "precio": "1"
     }
   ]
 }

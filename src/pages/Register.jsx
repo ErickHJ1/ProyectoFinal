@@ -22,10 +22,23 @@ const Register = () => {
 
     return(
         <>
+        
+        <h1>Registro</h1>
+        <div className="base">
+            <div className="wrapper">
+                <div className="input-box">
         <input placeholder="correo" type="text" value={correo} onChange={e => setCorreo(e.target.value)}/>
+        </div>
+        <div className="input-box">
         <input placeholder="usuario" type="text" value={usuario} onChange={e => setUsuario(e.target.value)}/>
+        </div>
+        <div className="input-box">
         <input placeholder="password" type="password" value={pass} onChange={e => setPass(e.target.value)}/>
-        <button onClick={addUser}>Registrarse</button>
+        </div>
+        <button className="btn" onClick={addUser}>Registrarse</button>
+        <a href="/login">Ya tienes una cuenta?</a>
+            </div>
+        </div>
         </>
     )
     async function addUser() {

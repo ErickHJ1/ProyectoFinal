@@ -32,12 +32,16 @@ const Usuario = () => {
 }
 }
 return (
-  <div>
+  <>
       <input type="text" value={armadura} placeholder='Nombre de la armadura' onChange={e => setArmadura(e.target.value)}/>
       <input type="text" value={tipo} placeholder='Tipo de armadura' onChange={e => setTipo(e.target.value)}/>
       <input type="text" value={precio} placeholder='Precio de la armadura' onChange={e => setPrecio(e.target.value)}/>
       <button onClick={addProduct}>Añadir producto</button>
+    <div>
+      
     </div>
+    
+    </>
   )
 }
 
