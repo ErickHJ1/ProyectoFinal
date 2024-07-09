@@ -1,28 +1,36 @@
 {
   "products": [
     {
-      "id": "0932",
-      "armadura": "Leon joven",
-      "tipo": "Pesada",
-      "precio": "150000 runas"
-    },
-    {
-      "id": "c304",
+      "id": "bb96",
       "armadura": "12",
       "tipo": "12",
-      "precio": "21"
+      "precio": "12"
     },
     {
-      "id": "6350",
-      "armadura": "11",
-      "tipo": "1",
-      "precio": "1"
+      "id": "e452",
+      "armadura": "12",
+      "tipo": "12",
+      "precio": "12"
     },
     {
-      "id": "670a",
-      "armadura": "11",
-      "tipo": "1",
-      "precio": "1"
+      "id": "7c52",
+      "armadura": "12",
+      "tipo": "12",
+      "precio": "12"
+    }
+  ],
+  "Contacto": [
+    {
+      "id": "d61c",
+      "correo": "12",
+      "usuario": "12",
+      "razon": "12"
+    },
+    {
+      "id": "968f",
+      "correo": "12",
+      "usuario": "12",
+      "razon": "12"
     }
   ]
 }
