@@ -1,72 +1,41 @@
 
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { IoClose, IoMenu } from "react-icons/io5";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
-const Navbar = () => {
+
+const Navbars = () => {
  return (
-   <header className="header">
-     <nav className="nav container">
-       <NavLink to="/" className="nav__logo">
-         Navigation Bar
-       </NavLink>
-
-       <div
-         className={"nav__menu"}
-         id="nav-menu"
-       >
-         <ul className="nav__list">
-           <li className="nav__item">
-             <NavLink to="/" className="nav__link">
-               Home
-             </NavLink>
-           </li>
-           <li className="nav__item">
-             <NavLink to="/usuario" className="nav__link">
-               Usuario
-             </NavLink>
-           </li>
-           <li className="nav__item">
-             <NavLink
-               to="/about"
-               className="nav__link"
-             >
-               About Us
-             </NavLink>
-           </li>
-           <li className="nav__item">
-             <NavLink
-               to="/favorite"
-               className="nav__link"
-             >
-               Favorite
-             </NavLink>
-           </li>
-           <li className="nav__item">
-             <NavLink
-               to="/contact"
-               className="nav__link"
-             >
-               Contact Us
-             </NavLink>
-           </li>
-           <li className="nav__item">
-             <NavLink to="/get-started" className="nav__link nav__cta">
-               Get Started
-             </NavLink>
-           </li>
-         </ul>
-         <div className="nav__close" id="nav-close">
-           <IoClose />
-         </div>
-       </div>
-
-       <div className="nav__toggle" id="nav-toggle">
-         <IoMenu />
-       </div>
-     </nav>
-   </header>
+  <Navbar expand="lg" className="bg-body-tertiary">
+  <Container>
+    <Navbar.Brand>React-Bootstrap</Navbar.Brand>
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <Navbar.Collapse id="basic-navbar-nav">
+      <Nav className="me-auto">
+        <Nav.Link href="#home">Home</Nav.Link>
+        <Nav.Link href="#link">Link</Nav.Link>
+        <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+          <li>
+            <Link to="/usuario">meduka</Link>
+            </li>
+          <NavDropdown.Item href="#action/3.2">
+            Another action
+          </NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+          <NavDropdown.Divider />
+          <NavDropdown.Item href="#action/3.4">
+            Separated link
+          </NavDropdown.Item>
+        </NavDropdown>
+      </Nav>
+    </Navbar.Collapse>
+  </Container>
+</Navbar>
  );
 };
 
-export default Navbar;
+export default Navbars;

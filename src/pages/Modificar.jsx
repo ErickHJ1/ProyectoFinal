@@ -19,7 +19,7 @@ const Modificar = () => {
   }
     return (
         <>
-        <form action="submit">
+        <form >
             <input type="text" value={correo} placeholder="Correo" onChange={e => setArmadura(e.target.value)}/>
             <input type="text" value={usuario} placeholder="Usuario" onChange={e => setTipo(e.target.value)}/>
             <input type="text" value={razon} placeholder="Razón de contacto" onChange={e => setPrecio(e.target.value)}/>

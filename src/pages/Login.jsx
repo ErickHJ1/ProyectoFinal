@@ -43,7 +43,7 @@ async function loginUser() {
     return (
         <div className="base">
           <div className="wrapper">
-            <form action="submit">
+            <form>
         <h1>Login</h1>
         <div className="input-box">
         <input type="text" placeholder="Correo" value={usuarioInput} onChange={e => setUsuarioInput(e.target.value)}/>

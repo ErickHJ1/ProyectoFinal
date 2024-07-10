@@ -9,10 +9,13 @@ import Register from './pages/Register';
 import Usuario from './pages/Usuario';
 import Rutas_privada from './routes/Rutas_privada';
 import AuthProvider from './contexts/AuthProvider';
+import { Theme } from '@radix-ui/themes';
+import "@radix-ui/themes"
 
 
 function App() {
   return (
+        <Theme appearance='dark'>
       <AuthProvider>
         <Routes>
         <Route path="/" element={<Register/>}></Route>
@@ -23,6 +26,7 @@ function App() {
         <Route path='/usuario' element={<Rutas_privada route={<Usuario/>}/>}> </Route>
       </Routes>
       </AuthProvider>
+        </Theme>
   ); 
 }
 
