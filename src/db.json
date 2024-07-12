@@ -1,7 +1,30 @@
 {
-    "users": [
-      { "id": 1, "name": "John Doe", "email": "john@example.com" },
-      { "id": 2, "name": "Jane Smith", "email": "jane@example.com" }
-    ]
-  }
-  
+  "products": [
+    {
+      "armadura": "ven y",
+      "descripcion": "sana",
+      "precio": "mi dolor",
+      "id": "faf0"
+    },
+    {
+      "id": "2e06",
+      "armadura": "mjkljilkj",
+      "descripcion": "46458",
+      "precio": "kjkiklj\\"
+    }
+  ],
+  "Contacto": [
+    {
+      "id": "d61c",
+      "correo": "12",
+      "usuario": "12",
+      "razon": "12"
+    },
+    {
+      "id": "968f",
+      "correo": "12",
+      "usuario": "12",
+      "razon": "12"
+    }
+  ]
+}
